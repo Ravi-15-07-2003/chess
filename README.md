@@ -29,15 +29,22 @@ A web-based real-time multiplayer chess game built using Node.js, Express, Socke
 ## 📂 Project Structure
 chess-game/
 │
-├── public/ # Static assets (JS, CSS, images)
-│ └── client.js # Frontend Socket.io + drag-drop logic
+├── node_modules/             # Installed dependencies
+│
+├── public/
+│   └── js/
+│       └── client.js         # Frontend logic (drag-drop, Socket.io events)
 │
 ├── views/
-│ └── index.ejs # Chessboard UI template
+│   └── index.ejs             # EJS template for chessboard UI
 │
-├── server.js # Main server logic
-├── package.json
-└── README.md
+├── app.js                    # Main server logic (Express + Socket.io)
+├── backendSetup.yaml         # Backend setup instructions/config (YAML)
+├── frontendSetup.yaml        # Frontend setup instructions/config (YAML)
+├── package.json              # Project metadata and scripts
+├── package-lock.json         # Dependency lock file
+└── README.md                 # Project documentation
+
 
 
 
